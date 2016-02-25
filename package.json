@@ -1,6 +1,6 @@
 {
-  "name": "3D Ears",
-  "version": "0.0.0",
+  "name": "3d-ears",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node app.js"
