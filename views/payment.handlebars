@@ -1,0 +1,20 @@
+<section id="payment">
+  <div class="container">
+    <h3 class="text-center">{{title}}</h3>
+    <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tbody><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/nl/webapps/mpp/paypal-popup" title="Hoe PayPal Werkt" onclick="javascript:window.open('https://www.paypal.com/nl/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/logo_betalen_met_paypal_nl.jpg" border="0" alt="PayPal Acceptatie Logo" /></a></td></tr></tbody></table><!-- PayPal Logo -->
+      <div class="order-box">
+        <div class="order-box-header text-center"><h3>Order Summary</h3></div>
+        <div class="order-box-body">
+          <p>Total:</p>
+          <span class="pull-right"><p>$12</p></span>
+        </div>
+      </div>
+             
+      <form id="payment-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	      <input type="hidden" name="cmd" value="_s-xclick">
+	      <input type="hidden" name="hosted_button_id" value="LYSWZPSDHZPZQ">
+	      <input id="payment-submit" type="submit" class="btn btn-signin" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" value="Submit" class="btn btn-info btn-signup">
+	      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+       </form>
+  </div>
+</section>

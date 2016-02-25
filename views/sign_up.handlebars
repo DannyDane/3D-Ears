@@ -1,0 +1,53 @@
+<section id="account">
+ <div class="container">
+        
+  <h3 class="text-center">{{title}}</h3>
+  <p class="text-center">Already have an account? <a href="/sign_in">Sign in here</a></p>
+  
+  <form id="signup-form" method="post">
+    <fieldset class="form-group">
+      <label for="email" class="pull-left">Email</label>
+      <input type="email" id="email" class="form-control" name="email" required autofocus />
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="username" class="pull-left">Username</label>
+      <input type="text" id="username" class="form-control" name="username"  required/>
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="password" class="pull-left">Password</label>
+      <input  type="password" id="password" class="form-control" name="password" required />
+      <label class="toggle-password pull-left">
+         <input id="checkbox" type="checkbox" />
+         <span>Show password</span>
+      </label>
+
+    </fieldset>
+
+   
+    <input id="account-submit" type="submit" value="Create Account" class="btn btn-signin"/>
+
+  </form>
+         
+</div>
+</section>
+
+<script>
+  (function() {
+
+  var pwd = document.getElementById("password");
+  var chk = document.getElementById("checkbox");
+
+  chk.addEventListener("change", function(e) {
+    var target = e.target;
+    if (target.checked) {
+      pwd.type = "text";
+    } else {
+      pwd.type = "password";
+    }
+   });
+
+  }());
+
+</script>
+    
+    

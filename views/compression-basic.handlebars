@@ -1,0 +1,87 @@
+<div class="container">
+  
+  <div class="row crumble">
+  <div>
+    <ul>
+      <li><a href="/exercises">Exercises</a></li>
+      <li><a href="/exercises/eq">Compression</a></li>
+      <li class="is-active">Level 1</li>
+    </ul>
+  </div>
+</div>
+
+  <div class="background-texture"> 
+    <div class="help-modal"></div>    
+    <div class="box-top">
+      <div class="box-top-left pull-left">
+        <input type="radio" id="radio-play" name="exercise-radio" checked/>
+        <label for="radio-play"><div class="vertical-lign">PLAY</div></label>
+        <input type="radio" id="radio-help" name="exercise-radio"/>
+         <label for="radio-help"><div>HELP</div></label>
+      </div>    
+      <div class="box-top-middle"><div class="progress-bar"><div class="progress-bar-progress"></div></div>  </div> 
+      <div class="box-top-right pull-right">
+        <p>SCORE</p>
+        <h2>0</h2>
+      </div>  
+    </div>
+
+    <div class="box-bottom">
+      <div class="box-bottom-left">
+      	<ul class="drill-menu">
+          DRILL
+        </ul>
+      </div>
+      <div class="box-bottom-right pull-right">
+        <li class="btn-submit">NEXT</li>
+      </div>
+    </div>
+               
+    <section id="drill-screen"> 
+      <div class="drill-screen-body">
+        <div id="original" >
+          <p>How much gain reduction is applied to B?</p>
+          <li class="btn-ex btn-original">Normal</li>
+          <li class="btn-ex btn-changed">EQ</li>
+        </div>
+        <div class="buttons-wrapper">
+      	  <div class="buttons-left"><p></p></div>
+          <div class="buttons-right"><p></p></div>
+          <div id="buttons" class="row"></div>	
+        </div>
+   
+        <div id="controls">    
+          <div class="controls-middle btn-play"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="final-screen">
+      <div class="final-screen-body">
+        <h2>End of drill</h2>
+        <div class="circle" id="circles-1"></div>
+        <div class="final-screen-scores">
+          <div class="scores-left pull-left">
+            <p>Number of questions</p> 
+            <p>Answered correctly</p> 
+            <p>Total score</p> 
+          </div>
+          <div class="scores-right pull-right">
+            <p>10</p> 
+            <p class="score-correct">6</p> 
+            <p class="score-final">60</p> 
+          </div>
+        </div>
+      </div>
+      <div class="final-screen-footer">
+        <input type="button" value="Repeat Drill" class="btn btn-again pull-left"/>
+        <input type="button" value="Next Drill" class="btn btn-next pull-right"/> 
+      </div>
+    </section>
+  
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+<script src="../../javascripts/compression-basic.js"></script>
+<script src="../../javascripts/circles.js"></script>

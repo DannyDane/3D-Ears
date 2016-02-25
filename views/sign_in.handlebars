@@ -1,0 +1,21 @@
+<section id="account">
+  <div class="container">
+    <h3 class="text-center">{{title}}</h3>
+    <p class="text-center">Don't have an account yet? <a href="/sign_up">Create an account</a></p>
+          
+    <form name="signup-form" id="signin-form" method="post">
+      <fieldset class="form-group">
+        <label for="email" class="pull-left">Email</label>
+        <input type="email" id="email" class="form-control" name="email" autofocus/>
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="password" class="pull-left">Password</label>
+        <input  type="password" id="password" class="form-control" name="password"/>
+      </fieldset>
+     
+        <input id="account-submit" type="submit" value="Sign In" class="btn btn-signin"/>
+          <a class="pw-forgot" href="/forgot">Forgot Password?</a>       
+    </form>
+   
+  </div>
+</section>

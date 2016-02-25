@@ -1,0 +1,46 @@
+[
+   {
+   	"nrOfButtons": 2,
+	"threshold": [0, -48],        
+	"attack": [0, 0.050],
+	"release": [0, 0.250],
+	"gain": [1.0, 0.45],
+	"buttonText": ["0 dB", "12 dB"],
+	"sideText": ["", ""],
+	"sounds": "drumloop1.wav",
+	"question": "How much gain reduction is applied to B?"
+	},
+   {
+   	"nrOfButtons": 3,
+	"threshold": [0, -39, -48],         
+	"attack": [0, 0.050, 0.050],
+	"release": [0, 0.250, 0.250],
+	"gain": [1.0, 0.4, 0.45],
+	"buttonText": ["0 dB", "6 dB", "12 dB"],
+	"sideText": ["", "", ""],
+	"sounds": "drumloop1.wav",
+	"question": "How much gain reduction is applied to B?"
+	},
+   {
+   	"nrOfButtons": 4,
+	"threshold": [0, -39, -43, -48],         
+	"attack": [0, 0.050, 0.050, 0.050],
+	"release": [0, 0.250, 0.250, 0.250],
+	"gain": [1.0, 0.4, 0.4, 0.45],
+	"buttonText": ["0 dB", "6 dB", "9 dB", "12 dB"],
+	"sideText": ["", "", "", ""],
+	"sounds": "drumloop1.wav",
+	"question": "How much gain reduction is applied to B?"
+	},
+   {
+   	"nrOfButtons": 5,
+	"threshold": [0, -32, -39, -43, -48],         
+	"attack": [0, 0.050, 0.050, 0.050, 0.050],
+	"release": [0, 0.250, 0.250, 0.250, 0.250],
+	"gain": [1.0, 0.5, 0.4, 0.4, 0.45],
+	"buttonText": ["0 dB", "3 dB", "6 dB", "9 dB", "12 dB"],
+	"sideText": ["", "", "", "", ""],
+	"sounds": "drumloop1.wav",
+	"question": "How much gain reduction is applied to B?"
+	}
+]
